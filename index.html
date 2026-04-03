@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeeshan Chaudhry | Engineering Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #0b1020;
+      color: #e5e7eb;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(11, 16, 32, 0.92);
+      border-bottom: 1px solid #1f2937;
+      backdrop-filter: blur(8px);
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #cbd5e1;
+    }
+
+    .brand {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .hero {
+      padding: 5rem 0 3rem;
+    }
+
+    .eyebrow {
+      color: #60a5fa;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.2rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      color: #ffffff;
+    }
+
+    .lead {
+      max-width: 720px;
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 1.2rem;
+      border-radius: 10px;
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #334155;
+      color: #e5e7eb;
+    }
+
+    section {
+      padding: 2rem 0;
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+      font-size: 1.8rem;
+    }
+
+    .muted {
+      color: #94a3b8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .tags {
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.55rem;
+      margin: 0.2rem 0.2rem 0 0;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 1px solid #1f2937;
+      margin-top: 2rem;
+      padding: 1.5rem 0 2rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #93c5fd;
+    }
+
+    @media (max-width: 700px) {
+      nav .container {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="brand">Zeeshan Chaudhry</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Engineering Student</div>
+      <h1>Building practical engineering and software projects.</h1>
+      <p class="lead">
+        I’m Zeeshan Chaudhry, an engineering student interested in applying code,
+        design, and analysis to real-world engineering problems.
+      </p>
+      <div class="buttons">
+        <a class="button" href="#projects">View Projects</a>
+        <a class="button secondary" href="resume.pdf">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">
+        I enjoy building projects that combine engineering thinking with software tools.
+        My interests include design, simulation, data analysis, and hands-on problem solving.
+        This site showcases selected coursework, personal builds, and technical projects.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p class="muted">
+            A short description of what you built, why it mattered, and what result it produced.
+          </p>
+          <div class="tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Analysis</span>
+            <span class="tag">Engineering</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p class="muted">
+            Describe your role, the technical challenge, and the main outcome in 2–3 lines.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data</span>
+            <span class="tag">Automation</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Three</h3>
+          <p class="muted">
+            This could be a CAD, hardware, design, or software project with a GitHub repo link later.
+          </p>
+          <div class="tags">
+            <span class="tag">CAD</span>
+            <span class="tag">Design</span>
+            <span class="tag">Prototype</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="muted">
+        MATLAB, Python, CAD, technical documentation, problem solving, data analysis,
+        prototyping, teamwork, and engineering communication.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">
+        The best way to reach me is by email or through my GitHub and LinkedIn profiles.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/znc204-11421" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="mailto:your-email@example.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Zeeshan Chaudhry
+  </footer>
+</body>
+</html>
